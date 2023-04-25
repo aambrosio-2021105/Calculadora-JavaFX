@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Anchor-Pane" prefHeight="482.0" prefWidth="297.0" styleClass="mainfxmlclass" stylesheets="@fxmlcalculadoraview.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bm.andyambrosio.controller.FXMLCalculadoraViewController">
+   <children>
+      <Label id="label-pantalla" fx:id="lblPantalla" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="65.0" prefHeight="72.0" prefWidth="266.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <GridPane alignment="CENTER" layoutX="13.0" layoutY="148.0" prefHeight="349.0" prefWidth="285.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="148.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="boton-division" fx:id="btnDividir" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="÷" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-siete" fx:id="btnSiete" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="7" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-cuatro" fx:id="btnCuatro" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="4" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-uno" fx:id="btnUno" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="1" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-inverso-aditivo" fx:id="btnInversoAditivo" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="±" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="6">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-ocho" fx:id="btnOcho" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="8" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-cinco" fx:id="btnCinco" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="5" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-dos" fx:id="btnDos" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="2" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-cero" fx:id="btnCero" mnemonicParsing="false" onAction="#clicNumero" prefHeight="47.0" prefWidth="63.0" styleClass="botones-numericos" text="0" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-nueve" fx:id="btnNueve" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="9" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-seis" fx:id="btnSeis" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="6" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-tres" fx:id="btnTres" mnemonicParsing="false" onAction="#clicNumero" prefHeight="48.0" prefWidth="63.0" styleClass="botones-numericos" text="3" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Button>
+            <Button id="boton-multiplicacion" fx:id="btoMultiplicar" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="x" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-punto" fx:id="btnPunto" mnemonicParsing="false" onAction="#clicPunto" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="." textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-resta" fx:id="btnResta" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="-" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-suma" fx:id="btnSuma" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="+" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-igual" fx:id="btnIgual" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#clicIgual" prefHeight="47.0" prefWidth="63.0" text="=" textAlignment="JUSTIFY" textFill="#1b0b0b" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button id="boton-inverso-multiplicativo" fx:id="btnInversoMultiplicacion" contentDisplay="CENTER" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="1/x" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button id="boton-potencia" fx:id="btnCuadrado" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="x²" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button id="boton-raiz-cuadrada" fx:id="btnRaiz" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="√x" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button id="boton-del" fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clicEliminar" prefHeight="45.0" prefWidth="64.0" styleClass="botones-acciones" text="DEL" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button id="boton-ac" fx:id="btnLimpiar" mnemonicParsing="false" onAction="#clicLimpiar" prefHeight="47.0" prefWidth="131.0" styleClass="botones-acciones" text="AC" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button id="boton-porcentaje" fx:id="btnPorciento" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#clicOperacion" prefHeight="47.0" prefWidth="63.0" styleClass="botones-operaciones" text="\%" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <MenuBar id="menuBar" fx:id="menuBar" layoutX="14.0" layoutY="13.0" styleClass="menuBar-opciones">
+        <menus>
+          <Menu id="menuBar-archivo" mnemonicParsing="false" styleClass="menuBar-opciones-archivo" text="Archivo">
+            <items>
+              <MenuItem id="menuBar-archivo-cerrar" mnemonicParsing="false" onAction="#clicSalir" styleClass="menuBar-opciones-archivo" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu id="menuBar-ayuda" mnemonicParsing="false" styleClass="menuBar-opciones-ayuda" text="Ayuda">
+            <items>
+              <MenuItem id="menuBar-ayuda-acerca" mnemonicParsing="false" onAction="#clicInformacion" styleClass="menuBar-opciones-ayuda" text="Acerca de...." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
